@@ -959,7 +959,7 @@ class Field(TreeObject):
     def __init__(self, data):
         DictionaryObject.__init__(self)
         attributes = ("/FT", "/Parent", "/Kids", "/T", "/TU", "/TM", "/Ff",
-                      "/V", "/DV", "/AA")
+                      "/V", "/DV", "/AA", "/DA", "/Rect")
         for attr in attributes:
             try:
                 self[NameObject(attr)] = data[attr]
