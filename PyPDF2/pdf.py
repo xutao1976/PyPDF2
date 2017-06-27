@@ -1265,7 +1265,8 @@ class PdfFileReader(object):
         fieldAttributes = {"/FT" : "Field Type", "/Parent" : "Parent",
                        "/T" : "Field Name", "/TU" : "Alternate Field Name",
                        "/TM" : "Mapping Name", "/Ff" : "Field Flags",
-                       "/V" : "Value", "/DV" : "Default Value"}
+                       "/V" : "Value", "/DV" : "Default Value",
+                       "/DA" : "Font", "/Rect" : "Field Position"}
         if retval == None:
             retval = {}
             catalog = self.trailer["/Root"]
